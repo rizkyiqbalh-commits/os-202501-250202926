@@ -1,0 +1,27 @@
+PS C:\Users\LENOVO> wsl
+rizky172007@LAPTOP-1DC8T04R:/mnt/c/Users/LENOVO$ uname -a
+Linux LAPTOP-1DC8T04R 6.6.87.2-microsoft-standard-WSL2 #1 SMP PREEMPT_DYNAMIC Thu Jun  5 18:30:46 UTC 2025 x86_64 x86_64 x86_64 GNU/Linux
+rizky172007@LAPTOP-1DC8T04R:/mnt/c/Users/LENOVO$ whoami
+rizky172007
+rizky172007@LAPTOP-1DC8T04R:/mnt/c/Users/LENOVO$ lsmod | head
+Module                  Size  Used by
+tls                    98304  0
+intel_rapl_msr         16384  0
+intel_rapl_common      32768  1 intel_rapl_msr
+kvm_intel             356352  0
+kvm                   970752  1 kvm_intel
+irqbypass              12288  1 kvm
+crc32c_intel           16384  2
+battery                20480  0
+ac                     16384  0
+rizky172007@LAPTOP-1DC8T04R:/mnt/c/Users/LENOVO$ dmesg | head
+[    0.000000] Linux version 6.6.87.2-microsoft-standard-WSL2 (root@439a258ad544) (gcc (GCC) 11.2.0, GNU ld (GNU Binutils) 2.37) #1 SMP PREEMPT_DYNAMIC Thu Jun  5 18:30:46 UTC 2025
+[    0.000000] Command line: initrd=\initrd.img WSL_ROOT_INIT=1 panic=-1 nr_cpus=8 hv_utils.timesync_implicit=1 console=hvc0 debug pty.legacy_count=0 WSL_ENABLE_CRASH_DUMP=1
+[    0.000000] KERNEL supported cpus:
+[    0.000000]   Intel GenuineIntel
+[    0.000000]   AMD AuthenticAMD
+[    0.000000] BIOS-provided physical RAM map:
+[    0.000000] BIOS-e820: [mem 0x0000000000000000-0x000000000009ffff] usable
+[    0.000000] BIOS-e820: [mem 0x00000000000e0000-0x00000000000e0fff] reserved
+[    0.000000] BIOS-e820: [mem 0x0000000000100000-0x00000000001fffff] ACPI data
+[    0.000000] BIOS-e820: [mem 0x0000000000200000-0x00000000f75fffff] usable
