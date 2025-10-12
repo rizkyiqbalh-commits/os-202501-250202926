@@ -48,7 +48,7 @@ dmesg | head
 
 ## Hasil Eksekusi
 Screenshot hasil percobaan:
-![praktikum/week1-intro-arsitektur-os/screenshots/ScreenshotsHasilTerminal.png](praktikum/week1-intro-arsitektur-os/screenshots/ScreenshotsHasilTerminal.png)
+![alt text](./screenshots/ScreenshotsHasilTerminal.png)
 
 ---
 
