@@ -87,6 +87,41 @@ Kesimpulan yang bisa didapatkan dari praktikum ini adalah OS Windows dan Linux m
 
 ---
 
+# Tugas & Quiz
+## Ringkasan Arsitektur Sistem Operasi
+**Arsitektur Operating System**
+
+Arsitektur Sistem Operasi merupakan desain struktur atau rancangan utama yang menggambarkan cara kerja, komponen-komponen, dan hubungan setiap bagian dalam sistem operasi untuk mengelola sumber daya perangkat keras dan perangkat lunak komputer secara sistematis dan efisien. Tujuan utama arsitektur sistem operasi yaitu: mengelola CPU dan memori; menyediakan fungsi dasar (manajemen proses, file, dan antarmuka aplikasi); memecah sistem untuk memudahkan perancangan dan pengelolaan; dan melindungi sistem serta memastikan data tetap aman. Arsitektur yang umum diantaranya yaitu Monolithic kernel (meliputi semua layanan dalam satu kernel), Microkernel (hanya fungsi inti yang ada di dalam kernel), dan Layered architecture (pembagian sistem menjadi beberapa lapisan).
+
+**Komponen Utama Arsitektur Sistem Operasi**
+1. Kernel (Inti sistem operasi).
+Kernel adalah inti sebuah sistem operasi yang menjadi penghubung utama antara software application dengan hardware komputer.
+2. System Call (Interface).
+Sytem call adalah sebuah mekanisme yang memungkinkan program user berinteraksi dengan kernel OS, dimana program meminta tugas/layanan kepada kernel OS untuk menjalankannya.
+3. User Space (Ruang pengguna).
+User space adalah area/tempat aplikasi non-kernel (terpisah dari kernel) seperti program user yang memerlukan system call untuk meminta layanan sistem seperti operasi input/output (I/O) atau akses jaringan.
+
+Jenis Arsitektur Sistem Operasi
+1. Monolithic Kernel 
+Meliputi semua layanan sistem operasi seperti manajemen proses, file, dan memori yang dijalankan dalam satu ruang yang sama di mode kernel. 
+Kelebihan : Perfroma lebih baik karena komunikasi langsung antar layanan, dan ukuran kode yang lebih kecil.
+Kekurangan : Kurang fleksibel dan kurang stabil.
+Contohnya adalah Linux, Windows, dan UNIX
+2. Microkernel
+Kernel minimalis yang hanya menjalankan fungsi inti (fungsi paling penting, seperti manajemen memori dan komunikasi antar-proses) di dalam kernel, sementara layanan lain dijalankan di luar kernel.
+Kelebihan : Lebih aman dan stabil, mudah menambahkan atau merubah layanan tanpa memodifikasi kernel, dan ukuran kernel yang lebih kecil.
+Kekurangan : Lebih lambat dan membutuhkan banyak kode untuk komunikasi antar-proses  (IPC).
+Contohnya adalah Mach (macOS atau iOS), QNX, dan MINIX.
+3. Layered Architecture
+Jenis sistem operasi yang membagi sistem menjadi lapisan-lapisan yang terhubung. Setiap lapisan memiliki tugas yang jelas dan berinteraksi dengan lapisan yang ada di dekatnya. Setiap lapisan menyediakan layanan untuk lapisan di atasnya dengan menggunakan layanan lapisan yang ada di bawahnya. 
+Kelebihan:Kemudahan dalam debugging, pembaruan, ataupun pengembangan, dan mempermudah sistem dalam mengelola karena strukturnya yang dibagi dalam lapisan-lapisan.
+Kekurangan:Dapat menimbulkan overhead karena data harus melewati banyak bagian/lapisan.
+Contohnya yaitu THE Operating System. 
+
+**Kesimpulan** 
+
+Pemilihan arsitektur sangat bergantung pada tujuan dari desain sistem operasi, yang mungkin memprioritaskan kinerja, keamanan, atau kemudahan pengembangan. Model arsitektur yang paling relevan untuk sistem modern adalah Microkernel, alasannya karena model ini fokus pada keamanan, stabilitas, dan mudah diadaptasi ke arsitektur hardware yang berbeda(cocok untuk sistem embedded, IoT, dan mobile OS).
+
 ## Quiz
 1. Sebutkan tiga fungsi utama sistem operasi.
 
